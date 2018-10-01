@@ -6,7 +6,7 @@ build docker images in travis: https://docs.travis-ci.com/user/docker/#Building-
 Build and run docker image locally
 
 docker build -t spark-distinct-comparison:0.1 .
-docker run -p 8888:8888 spark-distinct-comparison:0.1
+docker run -p 8888:8888 -p 4040:4040 spark-distinct-comparison:0.1
 
 Travis build is at https://travis-ci.org/dunnhumby/compare-spark-distinctcount-methods
 
